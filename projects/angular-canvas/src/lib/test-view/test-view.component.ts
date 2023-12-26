@@ -13,6 +13,7 @@ export class TestViewComponent {
   private isDrawing: boolean = false;
   @Input() hgt : number | undefined;
   @Input() wdt : number | undefined;
+  @Input() canvasSpecs : any | undefined;
   @Output() onSaveImage = new EventEmitter<string>();
 
   ngAfterViewInit() {
@@ -84,28 +85,28 @@ export class TestViewComponent {
     x, y;
 
     for (i = 0; i < l; i += 4) {
-        if (pixels.data[i + 3] !== 0) {
-            x = (i / 4) % c.width;
-            y = ~~((i / 4) / c.width);
+      if (pixels.data[i + 3] !== 0) {
+        x = (i / 4) % c.width;
+        y = ~~((i / 4) / c.width);
 
-            if (bound.top === c.height) {
-                bound.top = y;
-            } else if (y < bound.top) {
-                bound.top = y;
-            }
-
-            if (x > bound.right) {
-                bound.right = x;
-            }
-
-            if (x < bound.left) {
-                bound.left = x;
-            }
-
-            if (bound.bottom < y) {
-                bound.bottom = y;
-            }
+        if (bound.top === c.height) {
+            bound.top = y;
+        } else if (y < bound.top) {
+            bound.top = y;
         }
+
+        if (x > bound.right) {
+            bound.right = x;
+        }
+
+        if (x < bound.left) {
+            bound.left = x;
+        }
+
+        if (bound.bottom < y) {
+            bound.bottom = y;
+        }
+      }
     }
 
     let trimHeight = bound.bottom - bound.top,

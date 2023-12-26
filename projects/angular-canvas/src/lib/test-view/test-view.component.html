@@ -1,7 +1,10 @@
-<div>
-    <canvas #signatureCanvas [width]="wdt" [height]="hgt" style="border:1px solid #000;"></canvas>
-    <br />
-    <button (click)="clearSignature()">Clear Signature</button>
-    <button (click)="saveSignature()">Save Signature</button>
+<div > 
+    <canvas #signatureCanvas [width]="wdt ? wdt : '800'" [height]="hgt ? hgt : '200'" style="border:1px dashed #696969;background-color: rgb(235, 235, 235);"></canvas>
+    <div >
+        <button (click)="clearSignature()">Clear</button>
+        <button (click)="saveSignature()">Save</button>
+    </div>
 </div>
-  
+  <!--  position: relative;
+style="position: absolute;"
+-->
