@@ -1,5 +1,5 @@
 {
-  "name": "angular-canvas",
+  "name": "@ng-covpack/ng-angular-canvas",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
@@ -7,6 +7,10 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VibhaSakalley/angular-canvas.git"
   },
   "sideEffects": false
 }
