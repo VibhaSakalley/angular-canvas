@@ -1,11 +1,11 @@
 import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'lib-test-view',
-  templateUrl: './test-view.component.html',
-  styleUrls: ['./test-view.component.css']
+  selector: 'lib-sign-pad',
+  templateUrl: './sign-pad.component.html',
+  styleUrls: ['./sign-pad.component.css']
 })
-export class TestViewComponent {
+export class SignPadComponent {
   
   @ViewChild('signatureCanvas', { static: true }) signatureCanvas!: ElementRef<HTMLCanvasElement>;
 

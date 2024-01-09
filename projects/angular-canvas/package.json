@@ -1,6 +1,6 @@
 {
-  "name": "@ng-covpack/ng-angular-canvas",
-  "version": "0.0.1",
+  "name": "@e-signature/ng-signature-pad",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"

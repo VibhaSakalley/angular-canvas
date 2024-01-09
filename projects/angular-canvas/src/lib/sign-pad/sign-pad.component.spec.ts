@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TestViewComponent } from './test-view.component';
+import { SignPadComponent } from './sign-pad.component';
 
-describe('TestViewComponent', () => {
-  let component: TestViewComponent;
-  let fixture: ComponentFixture<TestViewComponent>;
+describe('SignPadComponent', () => {
+  let component: SignPadComponent;
+  let fixture: ComponentFixture<SignPadComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TestViewComponent ]
+      declarations: [ SignPadComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TestViewComponent);
+    fixture = TestBed.createComponent(SignPadComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

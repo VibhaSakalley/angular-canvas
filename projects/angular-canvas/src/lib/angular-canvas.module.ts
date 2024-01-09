@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { AngularCanvasComponent } from './angular-canvas.component';
-import { TestViewComponent } from './test-view/test-view.component';
-
-
+import { SignPadComponent } from './sign-pad/sign-pad.component';
 
 @NgModule({
   declarations: [
     AngularCanvasComponent,
-    TestViewComponent
+    SignPadComponent
   ],
   imports: [
   ],
   exports: [
     AngularCanvasComponent,
-    TestViewComponent
+    SignPadComponent
   ]
 })
 export class AngularCanvasModule { }
